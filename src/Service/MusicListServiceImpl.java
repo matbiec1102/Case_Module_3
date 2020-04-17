@@ -2,7 +2,7 @@ package Service;
 
 import Model.Song;
 
-public class MusicListImpl implements MusicListService {
+public class MusicListServiceImpl implements MusicListService {
     @Override
     public void uploadSong(Song Song) {
 

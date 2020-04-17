@@ -6,8 +6,6 @@ public interface MusicListService {
 
     public void uploadSong(Song Song);
 
-    public void findSongWithName(String nameSong);
-
     public void findSongWithId(int id);
 
     public void changeInfoSongById(int idSong, String nameSong, String author, String singer, String modelYear, String category, int view);

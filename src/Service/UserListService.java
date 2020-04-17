@@ -1,28 +1,22 @@
 package Service;
 
 import Model.Song;
+import Model.UserAccount;
+
+import java.sql.Connection;
+import java.util.List;
 
 public interface UserListService {
-    public void displayUserList();
+    public Connection getConnection();
 
-    public void changeName(String name);
+    public List<UserAccount> findAllUser();
 
-    public void changeUserName(String userName);
+    public UserAccount findUserById(int id);
 
-    public void changePassword(String password);
-
-    public void changeId(int newId);
-
-    public void changeGender(String gender);
-
-    public void changeEmail(String email);
-
-    public void changeAccess(boolean status);
+    public void changeInfoUser(int idUser);
 
     public void addSongToFavoriteList(Song song);
 
     public void deleteFavoriteSongById(int idSong);
-
-    public void displayFavoriteList();
 };
 

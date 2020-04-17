@@ -3,9 +3,6 @@ package Model;
 import java.util.ArrayList;
 
 public class UserAccount {
-    public static final String GENDER_MALE = "M";
-    public static final String GENDER_FEMALE = "F";
-
     private String password;
     private String userName;
     public String name;
@@ -17,6 +14,16 @@ public class UserAccount {
 
     //constructor
     public UserAccount() {
+    }
+
+    public UserAccount(int id, String userName, String password, String name, String gender, String email, boolean isAdmin) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.name = name;
+        this.gender = gender;
+        this.email = email;
+        this.isAdmin = isAdmin;
         favoriteSong = new ArrayList<>();
     }
 
